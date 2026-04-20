@@ -79,11 +79,12 @@
             <a href="/" class="logo"><i class="fas fa-bolt"></i> SZ Games</a>
             <nav class="main-nav">
                 <ul>
-                    <li><a href="/category/action">Action</a></li>
-                    <li><a href="/category/racing">Racing</a></li>
-                    <li><a href="/category/puzzle">Puzzle</a></li>
-                    <li><a href="/category/sports">Sports</a></li>
-                    <li><a href="/category/multiplayer">Multiplayer</a></li>
+                    <li><a href="/about.html">About Us</a></li>
+                    <li><a href="/contact.html">Contact Us</a></li>
+                    <li><a href="/privacy-policy.html">Privacy Policy</a></li>
+                    <li><a href="/terms.html">Terms & Conditions</a></li>
+                    <li><a href="/disclaimer.html">Disclaimer</a></li>
+                    <li><a href="/dmca.html">DMCA</a></li>
                 </ul>
             </nav>
             <div class="search-bar">
@@ -99,6 +100,35 @@
             <p>SZ Games gives you instant access to free online games. You open your browser and start playing without delay. No downloads slow you down or take storage space. No accounts stop you from jumping into games quickly.</p>
         </section>
 
+        <style>
+            .category-menu {
+                display: flex;
+                justify-content: center;
+                gap: 15px;
+                margin: 40px 0 20px;
+                flex-wrap: wrap;
+            }
+            .category-btn {
+                padding: 10px 25px;
+                background-color: white;
+                color: var(--primary);
+                border: 2px solid var(--primary);
+                border-radius: 50px;
+                text-decoration: none;
+                font-weight: 700;
+                transition: all 0.3s;
+            }
+            .category-btn:hover {
+                background-color: var(--primary);
+                color: white;
+            }
+        </style>
+        <div class="category-menu">
+            <a href="/category/action.html" class="category-btn">Action</a>
+            <a href="/category/racing.html" class="category-btn">Racing</a>
+            <a href="/category/puzzle.html" class="category-btn">Puzzle</a>
+            <a href="/category/sports.html" class="category-btn">Sports</a>
+        </div>
         <h2 class="section-title">Popular Games</h2>
         <div class="game-grid">
             <div class="game-card">
