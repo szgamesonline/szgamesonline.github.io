@@ -3,184 +3,674 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SZ Games Blog – Gaming Guides, Tips & Articles</title>
-<meta name="description" content="Read SZ Games blog for gaming guides, tips, safety information, and articles about free browser games. Learn how to play, stay safe, and discover the best games.">
-<meta name="keywords" content="SZ Games blog, gaming guides, how to play games, free games tips, browser gaming articles, unblocked games guide">
+<title>SZ Games Blog – Gaming Guides, Tips & News | SZ Games Online</title>
+<meta name="description" content="Read the SZ Games Online blog for gaming guides, safety tips, best game lists, and how-to articles. Learn how to play, stay safe, and discover the best free premium games.">
+<meta name="keywords" content="SZ Games blog, gaming guides, how to play SZ games, is SZ games safe, best unblocked games, free online games tips, SZ Games Online articles">
 <meta name="robots" content="index, follow">
+<meta name="author" content="SZ Games Online">
 <link rel="canonical" href="https://szgamesonline.github.io/blog.html">
+<meta property="og:title" content="SZ Games Blog – Gaming Guides, Tips & News">
+<meta property="og:description" content="Gaming guides, safety tips, best game lists and more — from the team at SZ Games Online.">
+<meta property="og:url" content="https://szgamesonline.github.io/blog.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SZ Games Online">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="SZ Games Blog – Gaming Guides & Tips">
+<meta name="twitter:description" content="Read gaming guides, safety tips, and best game lists on SZ Games Online blog.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Blog",
+  "name": "SZ Games Online Blog",
+  "url": "https://szgamesonline.github.io/blog.html",
+  "description": "Gaming guides, tips, safety information, and best game lists from SZ Games Online.",
+  "publisher": {
+    "@type": "Organization",
+    "name": "SZ Games Online",
+    "url": "https://szgamesonline.github.io/"
+  }
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
-:root{--primary:#e63946;--bg:#fff;--bg2:#f8f9fa;--bg3:#f1f3f5;--card:#fff;--border:#e9ecef;--text:#212529;--text-muted:#6c757d;--text-light:#adb5bd;--shadow:0 2px 12px rgba(0,0,0,.07);--radius:14px;}
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
-body{font-family:'Lato',sans-serif;background:var(--bg);color:var(--text);line-height:1.7;font-size:15px;}
-.topbar{background:var(--primary);color:white;text-align:center;font-size:.78rem;padding:6px 20px;}
-.topbar a{color:#ffe;text-decoration:underline;}
-header{position:sticky;top:0;z-index:200;background:#fff;border-bottom:2px solid var(--border);box-shadow:0 2px 8px rgba(0,0,0,.06);}
-.header-inner{max-width:1280px;margin:0 auto;padding:0 20px;display:flex;align-items:center;justify-content:space-between;height:64px;gap:16px;}
-.logo{font-family:'Nunito',sans-serif;font-weight:900;font-size:1.4rem;text-decoration:none;color:var(--text);}
-.logo span{color:var(--primary);}
-nav.main-nav{display:flex;align-items:center;gap:2px;}
-nav.main-nav a{color:var(--text-muted);text-decoration:none;font-size:.88rem;font-weight:700;padding:6px 14px;border-radius:8px;transition:all .2s;white-space:nowrap;}
-nav.main-nav a:hover,nav.main-nav a.active{color:var(--primary);background:#fff1f2;}
-.nav-toggle{display:none;background:none;border:2px solid var(--border);color:var(--text);padding:6px 12px;border-radius:8px;cursor:pointer;font-size:1.1rem;}
-.mobile-nav{display:none;position:fixed;inset:64px 0 0 0;background:white;z-index:199;padding:20px;flex-direction:column;gap:4px;border-top:1px solid var(--border);overflow-y:auto;}
-.mobile-nav.open{display:flex;}
-.mobile-nav a{color:var(--text);text-decoration:none;font-weight:700;font-size:1rem;padding:12px 16px;border-radius:10px;}
-.mobile-nav a:hover{background:var(--bg2);color:var(--primary);}
-.page-hero{background:linear-gradient(135deg,#fff1f2,#fff9f0);border-bottom:1px solid var(--border);padding:40px 20px 32px;text-align:center;}
-.page-hero h1{font-family:'Nunito',sans-serif;font-size:clamp(1.6rem,4vw,2.4rem);font-weight:900;letter-spacing:-.02em;margin-bottom:10px;}
-.page-hero h1 span{color:var(--primary);}
-.page-hero p{color:var(--text-muted);font-size:.95rem;max-width:500px;margin:0 auto;}
-.wrapper{max-width:1100px;margin:0 auto;padding:0 20px;}
-.breadcrumb{padding:16px 0 8px;font-size:.8rem;color:var(--text-muted);display:flex;align-items:center;gap:6px;}
-.breadcrumb a{color:var(--primary);text-decoration:none;font-weight:600;}
-.blog-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:24px;padding:24px 0 50px;}
-.blog-card{background:var(--card);border:1.5px solid var(--border);border-radius:var(--radius);overflow:hidden;text-decoration:none;box-shadow:var(--shadow);transition:all .22s;display:block;}
-.blog-card:hover{border-color:var(--primary);transform:translateY(-4px);box-shadow:0 8px 30px rgba(0,0,0,.12);}
-.blog-img{width:100%;height:160px;display:flex;align-items:center;justify-content:center;font-size:3rem;}
-.blog-body{padding:20px;}
-.blog-tag{font-size:.68rem;font-weight:800;text-transform:uppercase;letter-spacing:.08em;color:var(--primary);margin-bottom:8px;}
-.blog-title{font-family:'Nunito',sans-serif;font-size:1.05rem;font-weight:800;color:var(--text);line-height:1.4;margin-bottom:10px;}
-.blog-excerpt{font-size:.82rem;color:var(--text-muted);line-height:1.6;margin-bottom:14px;}
-.blog-meta{font-size:.73rem;color:var(--text-light);display:flex;align-items:center;gap:8px;}
-.read-more{display:inline-flex;align-items:center;gap:4px;color:var(--primary);font-size:.82rem;font-weight:800;text-decoration:none;margin-top:4px;}
-.read-more:hover{text-decoration:underline;}
-footer{background:#1a1a2e;color:#ccc;margin-top:20px;}
-.footer-top{max-width:1280px;margin:0 auto;padding:36px 20px 24px;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:24px;}
-@media(max-width:900px){.footer-top{grid-template-columns:1fr 1fr;}}
-@media(max-width:480px){.footer-top{grid-template-columns:1fr;}}
-.footer-brand .logo{color:white;font-size:1.1rem;}.footer-brand .logo span{color:var(--primary);}
-.footer-brand p{font-size:.8rem;color:#888;margin-top:8px;max-width:220px;line-height:1.6;}
-.footer-col h4{font-family:'Nunito',sans-serif;font-size:.76rem;font-weight:900;text-transform:uppercase;letter-spacing:.1em;color:white;margin-bottom:12px;}
-.footer-col a{display:block;color:#888;text-decoration:none;font-size:.8rem;margin-bottom:7px;transition:color .2s;}
-.footer-col a:hover{color:var(--primary);}
-.footer-bottom{border-top:1px solid rgba(255,255,255,.08);max-width:1280px;margin:0 auto;padding:14px 20px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;font-size:.73rem;color:#555;}
-.footer-bottom a{color:#777;text-decoration:none;}.footer-bottom a:hover{color:var(--primary);}
-@media(max-width:768px){nav.main-nav{display:none;}.nav-toggle{display:block;}}
+:root {
+  --red: #e63946;
+  --red-dark: #b5202c;
+  --red-light: #fff1f2;
+  --green: #2dc653;
+  --blue: #3a86ff;
+  --orange: #f77f00;
+  --purple: #7c3aed;
+  --bg: #ffffff;
+  --bg2: #f8f9fa;
+  --bg3: #f1f3f5;
+  --border: #e9ecef;
+  --text: #111827;
+  --text-muted: #6b7280;
+  --text-light: #9ca3af;
+  --shadow-sm: 0 1px 4px rgba(0,0,0,0.06);
+  --shadow: 0 2px 14px rgba(0,0,0,0.08);
+  --shadow-lg: 0 8px 32px rgba(0,0,0,0.13);
+  --radius: 16px;
+  --radius-sm: 10px;
+  --radius-xs: 6px;
+  --font-head: 'Syne', sans-serif;
+  --font-body: 'Plus Jakarta Sans', sans-serif;
+  --header-h: 68px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--font-body);background:var(--bg);color:var(--text);line-height:1.7;font-size:15px;-webkit-font-smoothing:antialiased}
+
+/* TOPBAR */
+.topbar{background:linear-gradient(90deg,var(--red-dark),var(--red));color:#fff;text-align:center;font-size:.78rem;font-weight:600;padding:8px 20px;letter-spacing:.02em}
+.topbar a{color:#ffe;text-decoration:underline;text-underline-offset:3px}
+
+/* HEADER */
+header{position:sticky;top:0;z-index:300;background:rgba(255,255,255,.97);backdrop-filter:blur(10px);border-bottom:1.5px solid var(--border);box-shadow:0 2px 10px rgba(0,0,0,.05)}
+.header-inner{max-width:1320px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;height:var(--header-h);gap:20px}
+.logo{font-family:var(--font-head);font-weight:900;font-size:1.5rem;text-decoration:none;color:var(--text);letter-spacing:-.03em;white-space:nowrap;flex-shrink:0;display:flex;align-items:center;gap:8px}
+.logo-icon{width:34px;height:34px;background:var(--red);border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:1rem;flex-shrink:0}
+.logo span{color:var(--red)}
+nav.main-nav{display:flex;align-items:center;gap:2px;flex:1;justify-content:center}
+nav.main-nav a{color:var(--text-muted);text-decoration:none;font-size:.875rem;font-weight:700;padding:7px 13px;border-radius:var(--radius-xs);transition:all .18s;white-space:nowrap}
+nav.main-nav a:hover,nav.main-nav a.active{color:var(--red);background:var(--red-light)}
+.nav-toggle{display:none;background:none;border:1.5px solid var(--border);color:var(--text);padding:7px 12px;border-radius:var(--radius-xs);cursor:pointer;font-size:1.2rem;line-height:1}
+.mobile-nav{display:none;position:fixed;inset:var(--header-h) 0 0 0;background:white;z-index:299;padding:16px 20px 30px;flex-direction:column;gap:3px;border-top:1px solid var(--border);overflow-y:auto}
+.mobile-nav.open{display:flex}
+.mobile-nav a{color:var(--text);text-decoration:none;font-weight:700;font-size:.93rem;padding:10px 14px;border-radius:var(--radius-sm);transition:background .15s}
+.mobile-nav a:hover{background:var(--bg2);color:var(--red)}
+.mobile-nav .divider{height:1px;background:var(--border);margin:8px 0}
+
+/* BREADCRUMB */
+.breadcrumb{background:var(--bg2);border-bottom:1px solid var(--border);padding:10px 0}
+.breadcrumb-inner{max-width:1320px;margin:0 auto;padding:0 24px;display:flex;align-items:center;gap:8px;font-size:.8rem;color:var(--text-muted)}
+.breadcrumb a{color:var(--red);text-decoration:none;font-weight:600}
+.breadcrumb a:hover{text-decoration:underline}
+.breadcrumb span{color:var(--text-light)}
+
+/* PAGE HERO */
+.page-hero{background:linear-gradient(135deg,#fff1f2 0%,#fff8f0 50%,#f0f4ff 100%);border-bottom:1.5px solid var(--border);padding:48px 24px 40px;text-align:center}
+.page-hero-inner{max-width:720px;margin:0 auto;animation:fadeUp .5s ease both}
+.page-badge{display:inline-flex;align-items:center;gap:7px;background:white;border:2px solid var(--red);color:var(--red);font-size:.7rem;font-weight:800;padding:5px 15px;border-radius:40px;margin-bottom:18px;letter-spacing:.07em;text-transform:uppercase}
+.page-hero h1{font-family:var(--font-head);font-size:clamp(1.8rem,4.5vw,2.8rem);font-weight:900;line-height:1.15;letter-spacing:-.03em;margin-bottom:14px;color:var(--text)}
+.page-hero h1 em{color:var(--red);font-style:normal}
+.page-hero p{font-size:1rem;color:var(--text-muted);max-width:560px;margin:0 auto;line-height:1.75}
+
+/* WRAPPER */
+.wrapper{max-width:1320px;margin:0 auto;padding:0 24px}
+.blog-layout{display:grid;grid-template-columns:1fr 320px;gap:40px;padding:44px 0}
+
+/* BLOG FILTER TABS */
+.filter-row{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:28px}
+.filter-btn{display:inline-flex;align-items:center;gap:5px;color:var(--text-muted);text-decoration:none;font-size:.8rem;font-weight:700;padding:7px 16px;border-radius:40px;border:1.5px solid var(--border);transition:all .17s;cursor:pointer;background:white}
+.filter-btn:hover,.filter-btn.active{color:var(--red);background:var(--red-light);border-color:#fecdd3}
+.filter-label{font-family:var(--font-head);font-size:1rem;font-weight:900;color:var(--text);margin-right:8px;white-space:nowrap}
+
+/* FEATURED POST */
+.featured-post{background:white;border:1.5px solid var(--border);border-radius:var(--radius);overflow:hidden;text-decoration:none;display:grid;grid-template-columns:1fr 1fr;box-shadow:var(--shadow-sm);transition:all .22s;margin-bottom:28px}
+.featured-post:hover{border-color:var(--red);box-shadow:var(--shadow-lg);transform:translateY(-3px)}
+.featured-img{height:100%;min-height:220px;display:flex;align-items:center;justify-content:center;font-size:4rem}
+.featured-img-1{background:linear-gradient(135deg,#fee2e2,#fef3c7)}
+.featured-body{padding:28px}
+.featured-tag{font-size:.68rem;font-weight:800;text-transform:uppercase;letter-spacing:.1em;color:var(--red);margin-bottom:10px}
+.featured-label{display:inline-flex;align-items:center;gap:5px;background:var(--red);color:white;font-size:.65rem;font-weight:800;padding:3px 10px;border-radius:20px;margin-bottom:10px;text-transform:uppercase;letter-spacing:.05em}
+.featured-body h2{font-family:var(--font-head);font-size:1.3rem;font-weight:900;color:var(--text);line-height:1.3;margin-bottom:12px;letter-spacing:-.02em}
+.featured-body p{font-size:.88rem;color:var(--text-muted);line-height:1.7;margin-bottom:16px}
+.featured-meta{font-size:.75rem;color:var(--text-light);font-weight:600;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.read-more{display:inline-flex;align-items:center;gap:5px;color:var(--red);font-size:.82rem;font-weight:800;margin-top:12px}
+
+/* BLOG GRID */
+.posts-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.blog-card{background:white;border:1.5px solid var(--border);border-radius:var(--radius);overflow:hidden;text-decoration:none;box-shadow:var(--shadow-sm);transition:all .22s cubic-bezier(.25,.46,.45,.94);display:block}
+.blog-card:hover{border-color:var(--red);transform:translateY(-4px);box-shadow:var(--shadow-lg)}
+.blog-img{width:100%;height:160px;display:flex;align-items:center;justify-content:center;font-size:3rem}
+.blog-img-1{background:linear-gradient(135deg,#fee2e2,#fef3c7)}
+.blog-img-2{background:linear-gradient(135deg,#dbeafe,#e0e7ff)}
+.blog-img-3{background:linear-gradient(135deg,#d1fae5,#cffafe)}
+.blog-img-4{background:linear-gradient(135deg,#fce7f3,#ede9fe)}
+.blog-img-5{background:linear-gradient(135deg,#fef9c3,#fef3c7)}
+.blog-img-6{background:linear-gradient(135deg,#dcfce7,#d1fae5)}
+.blog-img-7{background:linear-gradient(135deg,#ffedd5,#fee2e2)}
+.blog-img-8{background:linear-gradient(135deg,#e0e7ff,#dbeafe)}
+.blog-body{padding:18px}
+.blog-tag{font-size:.67rem;font-weight:800;text-transform:uppercase;letter-spacing:.09em;color:var(--red);margin-bottom:6px}
+.blog-title{font-family:var(--font-head);font-size:.95rem;font-weight:800;color:var(--text);line-height:1.4;margin-bottom:8px;letter-spacing:-.01em}
+.blog-excerpt{font-size:.78rem;color:var(--text-muted);line-height:1.55;margin-bottom:12px}
+.blog-meta{font-size:.72rem;color:var(--text-light);font-weight:600;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.meta-dot{width:3px;height:3px;background:var(--text-light);border-radius:50%}
+
+/* SIDEBAR */
+.sidebar{}
+.sidebar-widget{background:white;border:1.5px solid var(--border);border-radius:var(--radius);padding:22px;margin-bottom:24px;box-shadow:var(--shadow-sm)}
+.widget-title{font-family:var(--font-head);font-size:.85rem;font-weight:900;color:var(--text);text-transform:uppercase;letter-spacing:.08em;margin-bottom:16px;display:flex;align-items:center;gap:8px}
+.widget-title::before{content:'';width:3px;height:16px;background:var(--red);border-radius:2px;flex-shrink:0}
+
+/* Popular Posts Widget */
+.popular-post{display:flex;gap:12px;align-items:flex-start;padding:10px 0;border-bottom:1px solid var(--border);text-decoration:none;transition:all .17s}
+.popular-post:last-child{border-bottom:none;padding-bottom:0}
+.popular-post:hover .pp-title{color:var(--red)}
+.pp-num{font-family:var(--font-head);font-size:1.2rem;font-weight:900;color:var(--border);flex-shrink:0;line-height:1;min-width:24px}
+.pp-info{}
+.pp-title{font-family:var(--font-head);font-size:.83rem;font-weight:800;color:var(--text);line-height:1.35;margin-bottom:3px;transition:color .17s}
+.pp-meta{font-size:.7rem;color:var(--text-light);font-weight:600}
+
+/* Categories Widget */
+.cat-item{display:flex;align-items:center;justify-content:space-between;padding:9px 12px;border-radius:var(--radius-xs);text-decoration:none;transition:all .17s;color:var(--text-muted);font-size:.83rem;font-weight:700;margin-bottom:4px}
+.cat-item:hover{background:var(--red-light);color:var(--red)}
+.cat-item span{background:var(--bg3);color:var(--text-light);font-size:.7rem;font-weight:700;padding:2px 8px;border-radius:20px}
+
+/* Newsletter Widget */
+.newsletter-widget p{font-size:.82rem;color:var(--text-muted);margin-bottom:14px;line-height:1.6}
+.nl-input{width:100%;border:1.5px solid var(--border);border-radius:var(--radius-xs);padding:9px 14px;font-size:.83rem;font-family:var(--font-body);color:var(--text);outline:none;margin-bottom:10px;transition:border .2s}
+.nl-input:focus{border-color:var(--red)}
+.nl-btn{width:100%;background:var(--red);color:white;border:none;border-radius:var(--radius-xs);padding:10px;font-size:.85rem;font-weight:800;font-family:var(--font-body);cursor:pointer;transition:background .18s}
+.nl-btn:hover{background:var(--red-dark)}
+
+/* Tags Widget */
+.tags-cloud{display:flex;flex-wrap:wrap;gap:6px}
+.tag-pill{display:inline-flex;background:var(--bg2);border:1.5px solid var(--border);color:var(--text-muted);font-size:.74rem;font-weight:700;padding:5px 12px;border-radius:40px;text-decoration:none;transition:all .17s}
+.tag-pill:hover{background:var(--red-light);color:var(--red);border-color:#fecdd3}
+
+/* Games Widget */
+.mini-game{display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid var(--border);text-decoration:none;transition:all .17s}
+.mini-game:last-child{border-bottom:none}
+.mini-game:hover .mg-name{color:var(--red)}
+.mg-icon{width:38px;height:38px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0;background:var(--bg3)}
+.mg-info{}
+.mg-name{font-family:var(--font-head);font-size:.82rem;font-weight:800;color:var(--text);transition:color .17s}
+.mg-cat{font-size:.7rem;color:var(--text-light);font-weight:600}
+
+/* PAGINATION */
+.pagination{display:flex;align-items:center;justify-content:center;gap:6px;margin-top:32px}
+.page-btn{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border:1.5px solid var(--border);border-radius:var(--radius-xs);font-size:.85rem;font-weight:700;color:var(--text-muted);text-decoration:none;transition:all .17s}
+.page-btn:hover,.page-btn.active{background:var(--red);color:white;border-color:var(--red)}
+.page-btn.wide{width:auto;padding:0 16px}
+
+/* ARTICLE SECTION */
+.blog-intro-section{background:var(--bg2);border-top:1.5px solid var(--border);padding:60px 0}
+.blog-intro{max-width:900px;margin:0 auto;padding:0 24px}
+.blog-intro h2{font-family:var(--font-head);font-size:1.5rem;font-weight:900;color:var(--text);margin:0 0 16px;padding-bottom:12px;border-bottom:2px solid var(--border);letter-spacing:-.02em}
+.blog-intro p{color:var(--text-muted);font-size:.97rem;line-height:1.85;margin-bottom:14px}
+.blog-intro a{color:var(--red);font-weight:700;text-decoration:none}
+.blog-intro a:hover{text-decoration:underline}
+
+/* FOOTER */
+footer{background:#111827;color:#9ca3af}
+.footer-top{max-width:1320px;margin:0 auto;padding:56px 24px 36px;display:grid;grid-template-columns:2.8fr 1fr 1fr 1fr;gap:36px}
+.footer-brand .logo{color:white;font-size:1.2rem}
+.footer-brand .logo span{color:var(--red)}
+.footer-brand p{font-size:.82rem;color:#6b7280;margin-top:12px;max-width:250px;line-height:1.65}
+.footer-contact{margin-top:18px;font-size:.8rem;color:#6b7280}
+.footer-contact a{color:var(--red);text-decoration:none;font-weight:700}
+.footer-col h4{font-family:var(--font-head);font-size:.75rem;font-weight:900;text-transform:uppercase;letter-spacing:.1em;color:white;margin-bottom:16px}
+.footer-col a{display:block;color:#6b7280;text-decoration:none;font-size:.82rem;margin-bottom:9px;transition:color .18s}
+.footer-col a:hover{color:var(--red)}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.06);max-width:1320px;margin:0 auto;padding:18px 24px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;font-size:.75rem;color:#4b5563}
+.footer-bottom a{color:#6b7280;text-decoration:none}
+.footer-bottom a:hover{color:var(--red)}
+
+/* RESPONSIVE */
+@media(max-width:1024px){.footer-top{grid-template-columns:1fr 1fr}.blog-layout{grid-template-columns:1fr}}
+@media(max-width:768px){nav.main-nav{display:none}.nav-toggle{display:block}.posts-grid{grid-template-columns:1fr}.featured-post{grid-template-columns:1fr}}
+@media(max-width:520px){.footer-top{grid-template-columns:1fr}}
+
+@keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
 </style>
 </head>
 <body>
-<div class="topbar">🎮 500+ Free Premium SZ Games — No Download, No Login! <a href="/">Play Now →</a></div>
+
+<div class="topbar">
+  🎮 500+ Free Premium Games — No Download, No Login Required!
+  <a href="/"> Visit SZ Games Online →</a>
+</div>
+
 <header>
   <div class="header-inner">
-    <a href="/" class="logo">SZ <span>Games</span></a>
-    <button class="nav-toggle" id="navToggle">☰</button>
+    <a href="/" class="logo">
+      <div class="logo-icon">🎮</div>
+      SZ <span>Games</span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu">☰</button>
     <nav class="main-nav">
-      <a href="/">🏠 Home</a><a href="/games.html">🎮 Games</a>
+      <a href="/">🏠 Home</a>
+      <a href="/games.html">🎮 All Games</a>
       <a href="/blog.html" class="active">📝 Blog</a>
-      <a href="/about.html">About Us</a><a href="/contact.html">Contact</a>
-      <a href="/privacy-policy.html">Privacy Policy</a>
+      <a href="/about.html">About Us</a>
+      <a href="/contact.html">Contact</a>
+      <a href="/privacy-policy.html">Privacy</a>
     </nav>
   </div>
 </header>
+
 <div class="mobile-nav" id="mobileNav">
-  <a href="/">🏠 Home</a><a href="/games.html">🎮 All Games</a><a href="/blog.html">📝 Blog</a>
-  <a href="/about.html">About Us</a><a href="/contact.html">Contact</a><a href="/privacy-policy.html">Privacy Policy</a>
+  <a href="/">🏠 Home</a>
+  <a href="/games.html">🎮 All Games</a>
+  <a href="/blog.html">📝 Blog</a>
+  <div class="divider"></div>
+  <a href="/category/action.html">🎯 Action Games</a>
+  <a href="/category/racing.html">🏎️ Racing Games</a>
+  <a href="/category/puzzle.html">🧩 Puzzle Games</a>
+  <a href="/category/sports.html">🏆 Sports Games</a>
+  <a href="/category/multiplayer.html">👥 Multiplayer Games</a>
+  <div class="divider"></div>
+  <a href="/about.html">About Us</a>
+  <a href="/contact.html">Contact</a>
+  <a href="/privacy-policy.html">Privacy Policy</a>
+  <a href="/terms.html">Terms & Conditions</a>
+  <a href="/dmca.html">DMCA</a>
 </div>
-<div class="page-hero">
-  <h1>SZ Games <span>Blog</span></h1>
-  <p>Gaming guides, tips, safety information, and articles to help you get the most out of SZ Games.</p>
-</div>
-<div class="wrapper">
-  <nav class="breadcrumb">
-    <a href="/">Home</a> › <span>📝 Blog</span>
-  </nav>
-  <div class="blog-grid">
-    <a href="/blog/how-to-play-sz-games.html" class="blog-card">
-      <div class="blog-img" style="background:linear-gradient(135deg,#dbeafe,#ede9fe);">🎮</div>
-      <div class="blog-body">
-        <div class="blog-tag">Guide</div>
-        <div class="blog-title">How to Play SZ Games – Complete Beginner Guide</div>
-        <div class="blog-excerpt">Everything you need to know to start playing free premium games on SZ Games. Step-by-step instructions for PC, mobile, and Chromebook.</div>
-        <div class="blog-meta">📅 2026 · ⏱️ 5 min read</div>
-        <a href="/blog/how-to-play-sz-games.html" class="read-more">Read More →</a>
-      </div>
-    </a>
-    <a href="/blog/is-sz-games-safe.html" class="blog-card">
-      <div class="blog-img" style="background:linear-gradient(135deg,#dcfce7,#d1fae5);">🔐</div>
-      <div class="blog-body">
-        <div class="blog-tag">Safety</div>
-        <div class="blog-title">Is SZ Games Safe? Complete Safety & Security Guide</div>
-        <div class="blog-excerpt">A detailed look at SZ Games safety, what to watch out for when playing online games, and tips to stay protected while gaming.</div>
-        <div class="blog-meta">📅 2026 · ⏱️ 6 min read</div>
-        <a href="/blog/is-sz-games-safe.html" class="read-more">Read More →</a>
-      </div>
-    </a>
-    <a href="/blog/best-unblocked-games.html" class="blog-card">
-      <div class="blog-img" style="background:linear-gradient(135deg,#fef3c7,#fff7ed);">🏆</div>
-      <div class="blog-body">
-        <div class="blog-tag">Top List</div>
-        <div class="blog-title">Best Free Premium SZ Games to Play in 2026</div>
-        <div class="blog-excerpt">Our curated top picks from 500+ free premium games on SZ Games — Slope, Run 3, Retro Bowl, 1v1.LOL and more must-play titles.</div>
-        <div class="blog-meta">📅 2026 · ⏱️ 7 min read</div>
-        <a href="/blog/best-unblocked-games.html" class="read-more">Read More →</a>
-      </div>
-    </a>
-    <a href="/blog/best-games-for-school.html" class="blog-card">
-      <div class="blog-img" style="background:linear-gradient(135deg,#fce7f3,#ffe4e6);">🏫</div>
-      <div class="blog-body">
-        <div class="blog-tag">School</div>
-        <div class="blog-title">Best Games to Play at School – SZ Games Guide</div>
-        <div class="blog-excerpt">Discover the best quick games to enjoy during school breaks. All games work in browsers and most work on school networks.</div>
-        <div class="blog-meta">📅 2026 · ⏱️ 5 min read</div>
-        <a href="/blog/best-games-for-school.html" class="read-more">Read More →</a>
-      </div>
-    </a>
-    <a href="/blog/best-racing-games.html" class="blog-card">
-      <div class="blog-img" style="background:linear-gradient(135deg,#ffedd5,#fff7ed);">🏎️</div>
-      <div class="blog-body">
-        <div class="blog-tag">Racing</div>
-        <div class="blog-title">Best Free Racing Games Online – Top Picks 2026</div>
-        <div class="blog-excerpt">From Moto X3M to Drift Hunters, explore the best free racing games you can play right now on SZ Games without any download.</div>
-        <div class="blog-meta">📅 2026 · ⏱️ 5 min read</div>
-        <a href="/blog/best-racing-games.html" class="read-more">Read More →</a>
-      </div>
-    </a>
-    <a href="/blog/slope-game-guide.html" class="blog-card">
-      <div class="blog-img" style="background:linear-gradient(135deg,#e0f2fe,#dbeafe);">🌀</div>
-      <div class="blog-body">
-        <div class="blog-tag">Game Guide</div>
-        <div class="blog-title">Slope Game – Complete Guide, Tips & High Score Tricks</div>
-        <div class="blog-excerpt">Master Slope with our complete guide. Learn the best strategies, tricks, and tips to beat your high score in the most addictive game on SZ Games.</div>
-        <div class="blog-meta">📅 2026 · ⏱️ 6 min read</div>
-        <a href="/blog/slope-game-guide.html" class="read-more">Read More →</a>
-      </div>
-    </a>
+
+<!-- Breadcrumb -->
+<div class="breadcrumb">
+  <div class="breadcrumb-inner">
+    <a href="/">Home</a>
+    <span>›</span>
+    <span>Blog</span>
   </div>
 </div>
+
+<!-- Page Hero -->
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div class="page-badge">📝 Gaming Blog & Guides</div>
+    <h1>SZ Games <em>Blog</em></h1>
+    <p>Gaming guides, safety tips, best game lists, and how-to articles. Learn everything about playing free premium games on SZ Games Online.</p>
+  </div>
+</div>
+
+<!-- Main Content -->
+<div class="wrapper">
+  <div class="blog-layout">
+
+    <!-- LEFT: Posts -->
+    <div>
+
+      <!-- Filter Tabs -->
+      <div class="filter-row">
+        <span class="filter-label">Browse:</span>
+        <a href="/blog.html" class="filter-btn active">🗂️ All Posts</a>
+        <a href="#guides" class="filter-btn">📖 Guides</a>
+        <a href="#safety" class="filter-btn">🔐 Safety</a>
+        <a href="#top-lists" class="filter-btn">🏆 Top Lists</a>
+        <a href="#game-tips" class="filter-btn">🎮 Game Tips</a>
+      </div>
+
+      <!-- Featured Post -->
+      <a href="/blog/how-to-play-sz-games.html" class="featured-post">
+        <div class="featured-img featured-img-1">🎮</div>
+        <div class="featured-body">
+          <div class="featured-label">⭐ Featured</div>
+          <div class="featured-tag">Guide</div>
+          <h2>How to Play SZ Games Online – Complete Beginner Guide 2026</h2>
+          <p>Everything you need to know to start playing 500+ free premium games on SZ Games Online instantly. Step-by-step guide for school, home, and mobile — no download needed.</p>
+          <div class="featured-meta">
+            <span>📅 April 2026</span>
+            <div class="meta-dot"></div>
+            <span>⏱️ 8 min read</span>
+            <div class="meta-dot"></div>
+            <span>📂 Guide</span>
+          </div>
+          <div class="read-more">Read Full Guide →</div>
+        </div>
+      </a>
+
+      <!-- Posts Grid -->
+      <div class="posts-grid" id="guides">
+        
+        <a href="/blog/is-sz-games-safe.html" class="blog-card">
+          <div class="blog-img blog-img-2">🔐</div>
+          <div class="blog-body">
+            <div class="blog-tag">🔐 Safety</div>
+            <div class="blog-title">Is SZ Games Safe? Complete Safety & Security Guide 2026</div>
+            <div class="blog-excerpt">Learn about SZ Games Online safety, privacy protection, and tips for safe gaming for students and all ages.</div>
+            <div class="blog-meta">
+              <span>📅 April 2026</span>
+              <div class="meta-dot"></div>
+              <span>⏱️ 6 min read</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="/blog/best-unblocked-games.html" class="blog-card">
+          <div class="blog-img blog-img-3">🏆</div>
+          <div class="blog-body">
+            <div class="blog-tag">🏆 Top List</div>
+            <div class="blog-title">Best Free Premium SZ Games to Play in 2026</div>
+            <div class="blog-excerpt">Our expert top picks from 500+ free premium games — Slope, Run 3, Retro Bowl, 1v1.LOL and many more.</div>
+            <div class="blog-meta">
+              <span>📅 April 2026</span>
+              <div class="meta-dot"></div>
+              <span>⏱️ 10 min read</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="/blog/best-games-for-school.html" class="blog-card" id="top-lists">
+          <div class="blog-img blog-img-4">🏫</div>
+          <div class="blog-body">
+            <div class="blog-tag">🏆 Top List</div>
+            <div class="blog-title">Best SZ Games to Play at School in 2026</div>
+            <div class="blog-excerpt">Top games that work on school networks and Chromebooks. Fast loading, fun gameplay, and student approved.</div>
+            <div class="blog-meta">
+              <span>📅 March 2026</span>
+              <div class="meta-dot"></div>
+              <span>⏱️ 7 min read</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="/blog/slope-game-guide.html" class="blog-card" id="game-tips">
+          <div class="blog-img blog-img-5">🌀</div>
+          <div class="blog-body">
+            <div class="blog-tag">🎮 Game Tips</div>
+            <div class="blog-title">Slope Game – Complete Guide, Tips & High Score Tricks</div>
+            <div class="blog-excerpt">Master the fast 3D ball game with our expert tips. Learn controls, strategies, and how to beat your high score in Slope.</div>
+            <div class="blog-meta">
+              <span>📅 March 2026</span>
+              <div class="meta-dot"></div>
+              <span>⏱️ 5 min read</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="/blog/best-racing-games.html" class="blog-card">
+          <div class="blog-img blog-img-7">🏎️</div>
+          <div class="blog-body">
+            <div class="blog-tag">🏆 Top List</div>
+            <div class="blog-title">Best Free Racing Games on SZ Games Online 2026</div>
+            <div class="blog-excerpt">From Moto X3M to Drift Hunters — discover the top racing games available free on SZ Games Online right now.</div>
+            <div class="blog-meta">
+              <span>📅 March 2026</span>
+              <div class="meta-dot"></div>
+              <span>⏱️ 6 min read</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="/blog/run-3-game-guide.html" class="blog-card">
+          <div class="blog-img blog-img-6">🏃</div>
+          <div class="blog-body">
+            <div class="blog-tag">🎮 Game Tips</div>
+            <div class="blog-title">Run 3 Game – Full Guide, All Characters & Tips</div>
+            <div class="blog-excerpt">Complete guide to playing Run 3. Unlock all characters, master every tunnel level, and beat the hardest stages.</div>
+            <div class="blog-meta">
+              <span>📅 February 2026</span>
+              <div class="meta-dot"></div>
+              <span>⏱️ 7 min read</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="/blog/best-multiplayer-games.html" class="blog-card" id="safety">
+          <div class="blog-img blog-img-8">👥</div>
+          <div class="blog-body">
+            <div class="blog-tag">🏆 Top List</div>
+            <div class="blog-title">Best Free Multiplayer Games on SZ Games Online</div>
+            <div class="blog-excerpt">Play with friends online! Top multiplayer games available free — 1v1.LOL, Among Us, Animal Arena and more.</div>
+            <div class="blog-meta">
+              <span>📅 February 2026</span>
+              <div class="meta-dot"></div>
+              <span>⏱️ 6 min read</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="/blog/retro-bowl-guide.html" class="blog-card">
+          <div class="blog-img blog-img-1">🏈</div>
+          <div class="blog-body">
+            <div class="blog-tag">🎮 Game Tips</div>
+            <div class="blog-title">Retro Bowl – Complete Strategy Guide & Tips 2026</div>
+            <div class="blog-excerpt">Learn how to win every season in Retro Bowl. Best plays, team management tips, and strategies to reach the championship.</div>
+            <div class="blog-meta">
+              <span>📅 January 2026</span>
+              <div class="meta-dot"></div>
+              <span>⏱️ 8 min read</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="/blog/1v1-lol-guide.html" class="blog-card">
+          <div class="blog-img blog-img-4">⚔️</div>
+          <div class="blog-body">
+            <div class="blog-tag">🎮 Game Tips</div>
+            <div class="blog-title">1v1.LOL Complete Guide – Controls, Tips & Winning Strategies</div>
+            <div class="blog-excerpt">Dominate every match in 1v1.LOL. Master building, shooting controls, and pro strategies to beat every opponent.</div>
+            <div class="blog-meta">
+              <span>📅 January 2026</span>
+              <div class="meta-dot"></div>
+              <span>⏱️ 7 min read</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="/blog/best-puzzle-games.html" class="blog-card">
+          <div class="blog-img blog-img-2">🧩</div>
+          <div class="blog-body">
+            <div class="blog-tag">🏆 Top List</div>
+            <div class="blog-title">Best Free Puzzle Games on SZ Games Online 2026</div>
+            <div class="blog-excerpt">Top brain-teasing puzzle games available free — Bloxorz, 2048, Bubble Shooter, Odd Bot Out and more.</div>
+            <div class="blog-meta">
+              <span>📅 December 2025</span>
+              <div class="meta-dot"></div>
+              <span>⏱️ 5 min read</span>
+            </div>
+          </div>
+        </a>
+
+      </div><!-- /.posts-grid -->
+
+      <!-- Pagination -->
+      <div class="pagination">
+        <a href="#" class="page-btn active">1</a>
+        <a href="#" class="page-btn">2</a>
+        <a href="#" class="page-btn">3</a>
+        <span style="color:var(--text-light);font-size:.85rem;padding:0 4px">...</span>
+        <a href="#" class="page-btn wide">Next →</a>
+      </div>
+
+    </div><!-- /left -->
+
+    <!-- RIGHT: Sidebar -->
+    <aside class="sidebar">
+
+      <!-- Popular Posts -->
+      <div class="sidebar-widget">
+        <div class="widget-title">🔥 Popular Posts</div>
+        <a href="/blog/how-to-play-sz-games.html" class="popular-post">
+          <div class="pp-num">01</div>
+          <div class="pp-info">
+            <div class="pp-title">How to Play SZ Games – Complete Beginner Guide</div>
+            <div class="pp-meta">⏱️ 8 min read · Guide</div>
+          </div>
+        </a>
+        <a href="/blog/is-sz-games-safe.html" class="popular-post">
+          <div class="pp-num">02</div>
+          <div class="pp-info">
+            <div class="pp-title">Is SZ Games Safe? Complete Safety Guide</div>
+            <div class="pp-meta">⏱️ 6 min read · Safety</div>
+          </div>
+        </a>
+        <a href="/blog/best-unblocked-games.html" class="popular-post">
+          <div class="pp-num">03</div>
+          <div class="pp-info">
+            <div class="pp-title">Best Free Premium SZ Games in 2026</div>
+            <div class="pp-meta">⏱️ 10 min read · Top List</div>
+          </div>
+        </a>
+        <a href="/blog/slope-game-guide.html" class="popular-post">
+          <div class="pp-num">04</div>
+          <div class="pp-info">
+            <div class="pp-title">Slope Game – Tips & High Score Tricks</div>
+            <div class="pp-meta">⏱️ 5 min read · Game Tips</div>
+          </div>
+        </a>
+        <a href="/blog/best-games-for-school.html" class="popular-post">
+          <div class="pp-num">05</div>
+          <div class="pp-info">
+            <div class="pp-title">Best SZ Games to Play at School 2026</div>
+            <div class="pp-meta">⏱️ 7 min read · Top List</div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Blog Categories -->
+      <div class="sidebar-widget">
+        <div class="widget-title">📂 Blog Categories</div>
+        <a href="#guides" class="cat-item">📖 Guides <span>3</span></a>
+        <a href="#top-lists" class="cat-item">🏆 Top Lists <span>4</span></a>
+        <a href="#game-tips" class="cat-item">🎮 Game Tips <span>4</span></a>
+        <a href="#safety" class="cat-item">🔐 Safety <span>1</span></a>
+      </div>
+
+      <!-- Play Popular Games -->
+      <div class="sidebar-widget">
+        <div class="widget-title">🎮 Play Now</div>
+        <a href="/slope.html" class="mini-game">
+          <div class="mg-icon">🌀</div>
+          <div class="mg-info"><div class="mg-name">Slope</div><div class="mg-cat">Action / Skill</div></div>
+        </a>
+        <a href="/run-3.html" class="mini-game">
+          <div class="mg-icon">🏃</div>
+          <div class="mg-info"><div class="mg-name">Run 3</div><div class="mg-cat">Platformer</div></div>
+        </a>
+        <a href="/retro-bowl.html" class="mini-game">
+          <div class="mg-icon">🏈</div>
+          <div class="mg-info"><div class="mg-name">Retro Bowl</div><div class="mg-cat">Sports</div></div>
+        </a>
+        <a href="/1v1-lol.html" class="mini-game">
+          <div class="mg-icon">⚔️</div>
+          <div class="mg-info"><div class="mg-name">1v1.LOL</div><div class="mg-cat">Action / Shooter</div></div>
+        </a>
+        <a href="/moto-x3m.html" class="mini-game">
+          <div class="mg-icon">🏍️</div>
+          <div class="mg-info"><div class="mg-name">Moto X3M</div><div class="mg-cat">Racing</div></div>
+        </a>
+        <div style="margin-top:14px">
+          <a href="/games.html" style="display:block;text-align:center;background:var(--red);color:white;text-decoration:none;padding:10px;border-radius:var(--radius-xs);font-size:.82rem;font-weight:800;font-family:var(--font-head)">🎮 Browse All 500+ Games →</a>
+        </div>
+      </div>
+
+      <!-- Newsletter -->
+      <div class="sidebar-widget">
+        <div class="widget-title">📧 Newsletter</div>
+        <div class="newsletter-widget">
+          <p>Get new articles and game updates delivered to your inbox. No spam, ever.</p>
+          <input type="email" class="nl-input" placeholder="Your email address..." aria-label="Email for newsletter">
+          <button class="nl-btn" onclick="alert('Thank you! You are subscribed.')">Subscribe Free</button>
+          <p style="font-size:.7rem;color:var(--text-light);margin-top:8px">By subscribing you agree to our <a href="/privacy-policy.html" style="color:var(--red)">Privacy Policy</a>.</p>
+        </div>
+      </div>
+
+      <!-- Tags -->
+      <div class="sidebar-widget">
+        <div class="widget-title">🏷️ Popular Tags</div>
+        <div class="tags-cloud">
+          <a href="/blog/slope-game-guide.html" class="tag-pill">Slope</a>
+          <a href="/blog/run-3-game-guide.html" class="tag-pill">Run 3</a>
+          <a href="/blog/retro-bowl-guide.html" class="tag-pill">Retro Bowl</a>
+          <a href="/blog/1v1-lol-guide.html" class="tag-pill">1v1.LOL</a>
+          <a href="/blog/best-unblocked-games.html" class="tag-pill">Unblocked</a>
+          <a href="/blog/best-games-for-school.html" class="tag-pill">School Games</a>
+          <a href="/blog/is-sz-games-safe.html" class="tag-pill">Safety</a>
+          <a href="/blog/best-racing-games.html" class="tag-pill">Racing</a>
+          <a href="/blog/best-puzzle-games.html" class="tag-pill">Puzzle</a>
+          <a href="/blog/best-multiplayer-games.html" class="tag-pill">Multiplayer</a>
+          <a href="/blog/best-unblocked-games.html" class="tag-pill">Free Games</a>
+          <a href="/category/action.html" class="tag-pill">Action</a>
+        </div>
+      </div>
+
+      <!-- Legal Links -->
+      <div class="sidebar-widget" style="background:var(--bg2)">
+        <div class="widget-title">⚖️ Legal</div>
+        <div style="display:flex;flex-direction:column;gap:8px">
+          <a href="/privacy-policy.html" style="color:var(--text-muted);text-decoration:none;font-size:.82rem;font-weight:600;transition:color .17s" onmouseover="this.style.color='var(--red)'" onmouseout="this.style.color='var(--text-muted)'">🔒 Privacy Policy</a>
+          <a href="/terms.html" style="color:var(--text-muted);text-decoration:none;font-size:.82rem;font-weight:600;transition:color .17s" onmouseover="this.style.color='var(--red)'" onmouseout="this.style.color='var(--text-muted)'">📋 Terms & Conditions</a>
+          <a href="/disclaimer.html" style="color:var(--text-muted);text-decoration:none;font-size:.82rem;font-weight:600;transition:color .17s" onmouseover="this.style.color='var(--red)'" onmouseout="this.style.color='var(--text-muted)'">⚠️ Disclaimer</a>
+          <a href="/dmca.html" style="color:var(--text-muted);text-decoration:none;font-size:.82rem;font-weight:600;transition:color .17s" onmouseover="this.style.color='var(--red)'" onmouseout="this.style.color='var(--text-muted)'">©️ DMCA</a>
+          <a href="/contact.html" style="color:var(--text-muted);text-decoration:none;font-size:.82rem;font-weight:600;transition:color .17s" onmouseover="this.style.color='var(--red)'" onmouseout="this.style.color='var(--text-muted)'">📧 Contact Us</a>
+        </div>
+      </div>
+
+    </aside><!-- /sidebar -->
+
+  </div><!-- /blog-layout -->
+</div><!-- /wrapper -->
+
+<!-- Blog Intro Article -->
+<div class="blog-intro-section">
+  <div class="blog-intro">
+    <h2>📝 About the SZ Games Online Blog</h2>
+    <p>Welcome to the <strong>SZ Games Online Blog</strong> — your go-to resource for everything related to free browser gaming. Whether you are a first-time visitor or a daily player, our blog covers everything you need to enjoy the best free premium games available online.</p>
+    <p>Our blog covers four main topics. First, we publish <strong>beginner guides</strong> that explain how to get started on <a href="/">SZ Games Online</a> from any device — PC, mobile, or Chromebook. Second, we create <strong>safety and privacy guides</strong> so players and parents understand how browser gaming works and what precautions to take. Third, we regularly publish <strong>top game lists</strong> to help you discover the best <a href="/category/action.html">Action</a>, <a href="/category/racing.html">Racing</a>, <a href="/category/puzzle.html">Puzzle</a>, <a href="/category/sports.html">Sports</a>, and <a href="/category/multiplayer.html">Multiplayer</a> games. Fourth, we share <strong>game tips and strategies</strong> for popular titles like <a href="/slope.html">Slope</a>, <a href="/run-3.html">Run 3</a>, <a href="/retro-bowl.html">Retro Bowl</a>, and <a href="/1v1-lol.html">1v1.LOL</a>.</p>
+    <p>All articles are written in simple, clear English so every reader can understand them easily. We update our blog regularly with fresh content. Bookmark this page and check back often for new guides and game tips. You can also <a href="/contact.html">Contact Us</a> at <a href="mailto:muhammadgullsher0786@gmail.com">muhammadgullsher0786@gmail.com</a> if you have a topic suggestion or question.</p>
+    <p>Ready to start playing? Visit our <a href="/games.html">All Games page</a> to browse 500+ free premium games, or <a href="/">go back to the Homepage</a> to explore by category. Check our <a href="/about.html">About Us</a> page to learn more about our mission.</p>
+  </div>
+</div>
+
+<!-- Footer -->
 <footer>
   <div class="footer-top">
     <div class="footer-brand">
-      <a href="/" class="logo">SZ <span>Games</span></a>
-      <p>Free premium browser games. No download, no login required.</p>
+      <a href="/" class="logo">
+        <div class="logo-icon" style="width:28px;height:28px;font-size:.9rem">🎮</div>
+        SZ <span>Games</span>
+      </a>
+      <p>Your ultimate hub for 500+ free premium unblocked browser games. No downloads, no login — just click and play instantly.</p>
+      <div class="footer-contact">📧 <a href="mailto:muhammadgullsher0786@gmail.com">muhammadgullsher0786@gmail.com</a></div>
     </div>
     <div class="footer-col">
       <h4>Categories</h4>
-      <a href="/category/action.html">🎯 Action</a><a href="/category/racing.html">🏎️ Racing</a>
-      <a href="/category/puzzle.html">🧩 Puzzle</a><a href="/category/sports.html">🏆 Sports</a>
+      <a href="/category/action.html">🎯 Action</a>
+      <a href="/category/racing.html">🏎️ Racing</a>
+      <a href="/category/puzzle.html">🧩 Puzzle</a>
+      <a href="/category/sports.html">🏆 Sports</a>
+      <a href="/category/multiplayer.html">👥 Multiplayer</a>
+      <a href="/category/shooter.html">🔫 Shooter</a>
+      <a href="/category/platformer.html">🏃 Platformer</a>
+      <a href="/category/driving.html">🚗 Driving</a>
     </div>
     <div class="footer-col">
       <h4>Navigation</h4>
-      <a href="/">Home</a><a href="/games.html">All Games</a><a href="/blog.html">Blog</a>
-      <a href="/about.html">About Us</a><a href="/contact.html">Contact</a>
+      <a href="/">Home</a>
+      <a href="/games.html">All Games</a>
+      <a href="/blog.html">Blog</a>
+      <a href="/about.html">About Us</a>
+      <a href="/contact.html">Contact Us</a>
+      <a href="/blog/how-to-play-sz-games.html">How to Play</a>
+      <a href="/blog/is-sz-games-safe.html">Is It Safe?</a>
     </div>
     <div class="footer-col">
       <h4>Legal</h4>
-      <a href="/privacy-policy.html">Privacy Policy</a><a href="/terms.html">Terms</a>
-      <a href="/disclaimer.html">Disclaimer</a><a href="/dmca.html">DMCA</a>
+      <a href="/privacy-policy.html">Privacy Policy</a>
+      <a href="/terms.html">Terms & Conditions</a>
+      <a href="/disclaimer.html">Disclaimer</a>
+      <a href="/dmca.html">DMCA</a>
     </div>
   </div>
   <div class="footer-bottom">
-    <span>© 2026 SZ Games. All rights reserved.</span>
-    <span><a href="/privacy-policy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/dmca.html">DMCA</a> · <a href="/contact.html">Contact</a></span>
+    <span>© 2026 SZ Games Online. All rights reserved. | <a href="mailto:muhammadgullsher0786@gmail.com">muhammadgullsher0786@gmail.com</a></span>
+    <span><a href="/privacy-policy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/disclaimer.html">Disclaimer</a> · <a href="/dmca.html">DMCA</a> · <a href="/contact.html">Contact</a></span>
   </div>
 </footer>
+
 <script>
 const toggle=document.getElementById('navToggle');
 const mobileNav=document.getElementById('mobileNav');
-toggle.addEventListener('click',()=>mobileNav.classList.toggle('open'));
-document.addEventListener('click',(e)=>{if(!toggle.contains(e.target)&&!mobileNav.contains(e.target))mobileNav.classList.remove('open')});
+toggle.addEventListener('click',(e)=>{
+  e.stopPropagation();
+  mobileNav.classList.toggle('open');
+  toggle.textContent=mobileNav.classList.contains('open')?'✕':'☰';
+});
+document.addEventListener('click',(e)=>{
+  if(!toggle.contains(e.target)&&!mobileNav.contains(e.target)){
+    mobileNav.classList.remove('open');
+    toggle.textContent='☰';
+  }
+});
 </script>
 </body>
 </html>
